@@ -1,0 +1,3 @@
+lets have our notes here.
+    - colors to use: []
+    - animation libraries: []
