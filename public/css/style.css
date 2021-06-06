@@ -1,0 +1,16 @@
+.nav-header{
+    display: flex;
+    list-style: none;
+    /* justify-content: space-around; */
+    align-items: right;
+    /* width: 25%; */
+    float: right;
+}
+
+.nav-header li{
+    margin-right: 15px;
+}
+
+.nav-header li a{
+    text-decoration: none;
+}
