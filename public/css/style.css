@@ -5,20 +5,14 @@ body
 }
 
 *{
-    text-decoration: none;
     padding: 0;
     margin: 0;
 }
 
 a{
-    text-decoration: none;
     color: black;
 }
 
-a :visited{
-    text-decoration: none;
-    color: black;
-}
 /* ###################################################### */
 
 
@@ -58,6 +52,16 @@ a :visited{
 #logo{
     border: 1px solid black;
 }
+
+@media (max-width: 786px){
+    .nav-links-container .nav-links{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+}
+
 /* End of Header */
 
 #heading{
