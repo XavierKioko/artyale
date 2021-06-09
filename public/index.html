@@ -14,29 +14,127 @@
             <div id="logo">
                 logo here
             </div>
-            <div class="something">
+            <!-- <div class="something">
                 anything else here like search or anything 
                 - it can be blank too
-            </div>
+            </div> -->
             <div class="nav-links-container" >
                 <ul class="nav-links">
-                    <li><a href="schools.html">Schools</a></li>
+                    <li><a href="schools.html">Courses</a></li>
                     <li><a href="events.html">Events</a></li>
                     <li><a href="news.html">News</a></li>
+                    <li><a href="news.html">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
-    <div id="heading">
+    <!-- <div id="heading">
         something interesting for the heading
-    </div>
+    </div> -->
     <section id="slider-images">
         have a slider with images to show intersting topics,
         achievement etc (be animated and attractive)
+        <br>
+        <br>
+        <button>Apply</button>
+        <button>visit us</button>
+    </section>
+
+    <section id="courses-cards">
+        <div class="card">
+            <div class="cards">
+                card 1
+            </div>
+            <div class="cards">
+                card 2
+            </div>
+            <div class="cards">
+                card 3
+            </div>
+            <div class="cards">
+                card 4
+            </div>
+        </div>
+    </section>
+    <section id="courses-cards">
+        <div class="card">
+            <div class="cards">
+                card 1
+            </div>
+            <div class="cards">
+                card 2
+            </div>
+            <div class="cards">
+                card 3
+            </div>
+            <div class="cards">
+                card 4
+            </div>
+        </div>
+    </section>
+    <section id="slider-images">
+        Online learning available tec
     </section>
     <footer>
         this is the footer
+        PO BOX
+        icon - insta, linkedin, facebook, 
 
     </footer>
+
+    <!-- this script is just a snippet from the web - showing how to use firebase in a html website
+    
+    https://www.geeksforgeeks.org/create-a-website-using-html-css-and-javascript-that-stores-data-in-firebase/
+    -->
+
+    <script src=
+    "https://www.gstatic.com/firebasejs/3.7.4/firebase.js">
+        </script>
+          
+        <script>
+            var firebaseConfig = {
+                apiKey: "Use Your Api Key Here",
+                authDomain: "Use Your authDomain Here",
+                databaseURL: "Use Your databaseURL Here",
+                projectId: "Use Your projectId Here",
+                storageBucket: "Use Your storageBucket Here",
+                messagingSenderId: "Use Your messagingSenderId Here",
+                appId: "Use Your appId Here"
+            };
+      
+            firebase.initializeApp(firebaseConfig);
+      
+            var messagesRef = firebase.database()
+                .ref('Collected Data');
+              
+            document.getElementById('contactForm')
+                .addEventListener('submit', submitForm);
+      
+            function submitForm(e) {
+                e.preventDefault();
+      
+                // Get values
+                var name = getInputVal('name');
+                var email = getInputVal('email');
+      
+                saveMessage(name, email);
+                document.getElementById('contactForm').reset();
+            }
+      
+            // Function to get get form values
+            function getInputVal(id) {
+                return document.getElementById(id).value;
+            }
+      
+            // Save message to firebase
+            function saveMessage(name, email) {
+                var newMessageRef = messagesRef.push();
+                newMessageRef.set({
+                    name: name,
+                    email: email,
+                });
+            }
+        </script>
 </body>
+
 </html>
