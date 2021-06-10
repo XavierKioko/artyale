@@ -4,66 +4,110 @@ body{
     padding: 0;
 }
 
+/* Start of Styling */
+
+
+/* Start of Header */
 .wrapper{
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, .4), rgba(0, 0, 0, .5)),url('../images/yale.jpg');
     background-position: center;
     background-size: cover;
-    min-height: 30rem;
+    top: 0;
 }
 
 nav{
     width: 100%;
     height: 80px;
-    background-color: #0005;
+    background-color: #0005;/*This is the transparent black background*/
     line-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    /* position:fixed; /*this does the header to stick*/
+    /* top:0; */ 
+}
+
+nav img{
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+nav img :hover{
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
 
 nav ul{
-    float: right;
     margin: 0;
+    padding: 0;
     margin-right: 1.9rem;
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
 }
 
 nav ul li{
     list-style-type: none;
-    display: inline-block;
 }
 
 nav ul li a{
     text-decoration: none;
     color: white;
-    padding: 20px;
+    padding: 20px 4px 0 4px;
 }
 
-img{
-    width: 14%;
-    margin-left: 1.9rem;
-    margin-top: -4%;
+nav ul li a :active{
+    text-decoration: none;
+    color: white;
+    padding: 20px 4px 0 4px;
+    border-bottom: 1px solid black;
 }
 
-nav ul li:hover{
-    background-color: coral;
+nav ul li a:hover{
+    /* background-color: coral; */
     border-radius: 10px;
+    padding: 4px;
     color: #000;
     font-weight: bold;
-    font-size: 1.2rem;
-    border-bottom: 10px;
+    /* font-size: 1.2rem; */
+    border-bottom: 3px solid black;
 }
+/* End Header Section */
+/* ################################################################### */
 
+
+/* Start Slider Section */
 .section1{
-    width: 80%;
+    width: 75%;
     margin: auto;
     overflow: hidden;
-    margin-top: 4%;
+    top: 0;
+    height: 100vh;
 }
 
 .section1 h1{
     color: #ede4d9;
+    padding: 0;
     line-height: 50px;
     font-size: 50px;
+    margin-top: 200px;
     text-align: center;
     letter-spacing: 8px;
 }
+
+.section1 a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+/* .section1 a :hover{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+} */
 
 .section1 p{
     color: #ede4d9;
@@ -75,54 +119,60 @@ nav ul li:hover{
     padding: 0.7rem 1rem;
     color: #fff;
     border: none;
+    cursor: pointer;
     border-radius: 10px;
-    margin-left: 450px;
 }
+/* End Slider Section */
+/* ################################################# */
 
-.features{
-    margin-top: 4%;
-    margin-bottom: 2%;
-}
 
-.features button{
-    padding: 0.7rem 2rem;
-    margin-right: 2rem;
-    font-size: 1.2rem;
-    opacity: 0.7;
-}
-
+/* Start Courses Section */
 .popular_courses h1{
     margin-top: 5%;
     margin-bottom: 5%;
     text-align: center;
 }
-.facilities h1{
-    margin-top: 5%;
-    margin-bottom: 5%;
-    text-align: center;
-}
 
-#courses{
+.courses{
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+.courses img{
+    width: 200px;
+    border-radius: 10px;
+    margin: auto;
+    margin-left: 1.9rem;
+    margin-top: -4%;
+}
+/* End Courses Section */
+/* ######################################################################## */
+
+.facilities-section h1{
     text-align: center;
 }
 
-#courses img{
+.facilities{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+.facilities img{
     width: 200px;
     border-radius: 10px;
     border: 2px solid #000;
     margin: auto;
+    margin-left: 1.9rem;
+    margin-top: -4%;
 }
 
-.apply{
-    margin-top: 4%;
-    background-color: #3c5572;
-    padding: 0.7rem 1rem;
-    color: #fff;
-    border: none;
-    border-radius: 10px;
-}
+
 
 
 
