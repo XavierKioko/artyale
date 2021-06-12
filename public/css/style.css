@@ -19,48 +19,71 @@ a{
 /* Start of specific styles */
 
 /* Start of Header */
-.nav-header{
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 10px;
-    border: 1px solid black
+.wrapper{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.568), rgba(0, 0, 0, .5)),url('../images/yale.jpg');
+    background-position: center;
+    background-size: cover;
+    top: 0;
 }
 
-.nav-links-container{
-    display: flex;
-    justify-content: space-between;
-    width: 20%;
-}
-
-.nav-links{
-    display: flex;
-    text-decoration: none;
-    border: 1px solid black;
-    justify-content: space-around;
+nav{
     width: 100%;
-}
-
-.nav-links li{
-    list-style: none;
-    border: 1px solid black;
-}
-
-.nav-links li a{
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.363);/*This is the transparent black background*/
+    line-height: 80px;
     display: flex;
+    justify-content: space-between;
+    /* position:fixed; /*this does the header to stick*/
+    /* top:0; */ 
+}
+
+nav img{
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+nav img :hover{
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    margin-right: 1.9rem;
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul li a{
     text-decoration: none;
+    color: white;
+    padding: 20px 4px 0 4px;
 }
 
-#logo{
-    border: 1px solid black;
+nav ul li a :active{
+    text-decoration: none;
+    color: white;
+    padding: 20px 4px 0 4px;
+    border-bottom: 1px solid black;
 }
 
-@media (max-width: 786px){
-    .nav-links-container .nav-links{
-        display: flex;
-        flex-direction: column;
-        overflow: hidden;
-    }
-
+nav ul li a:hover{
+    /* background-color: coral; */
+    border-radius: 10px;
+    padding: 4px;
+    color: #000;
+    font-weight: bold;
+    /* font-size: 1.2rem; */
+    border-bottom: 3px solid black;
 }
 
 /* End of Header */
