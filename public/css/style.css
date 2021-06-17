@@ -328,11 +328,12 @@ img{
 }
 
 .social-media{
-    width: 80%;
+    width: 10%;
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .social-media-icon{
