@@ -172,6 +172,25 @@ nav ul{
     padding: 0 10px 10px 10px; 
     margin-top: 0;
 }
+.buttons button{
+	height: 50px;
+	width: 150px;
+	font-size: 18px;
+	font-weight: 600;
+	color: #1a195a;
+	background: #ffffff;
+	outline: none;
+	cursor: pointer;
+	border: 1px solid #7d9ab9;
+	border-radius: 25px;
+	transition: .4s;
+}
+.buttons .btn2{
+	margin-left: 25px;
+}
+.buttons button:hover{
+	background: #7d9ab9;
+}
 
 .courses > *{
     flex: 1 1 160px;
@@ -235,6 +254,10 @@ nav ul{
     flex-wrap: wrap;
     padding: 0 10px 10px 10px; 
     margin-top: 0;
+}
+.heading{
+    text-align: center;
+    color: white;
 }
 
 .facilities > *{
@@ -368,6 +391,10 @@ img{
 .links{
     border: 1px solid black;
     width: 10%;
+}
+.middle{
+    text-align:center;
+    font-family: 'Oswald', sans-serif;
 }
 
 /* .card{
