@@ -25,47 +25,46 @@ session_start();
         </nav>
         
 		<!-- Slideshow container -->
-		<div class="Slideshow-container">
-	<!-- Full-width images with number and caption text -->
-	<div class="mySlides fade">
-	  <img src="images/paintnight.jpg" style="width:100%" height="600px">
-	  <div class="text">
-		  <p class="dates">30th June 2021</p>
-		  <br>
-		  Paint Night!
+	<div class="Slideshow-container">
+		<!-- Full-width images with number and caption text -->
+		<div class="mySlides fade">
+			<img src="images/paintnight.jpg" style="width:100%" height="600px">
+			<div class="text">
+				<p class="dates">30th June 2021</p>
+				<br>
+				Paint Night!
+			</div>
 		</div>
-</div>
 
-	  <div class="mySlides fade">
-	
-	  <img src="images/colorfest.jpg" style="width:100%" height="600px">
-	  <div class="text" style="color:white">
-		<p class="dates">9th July 2021</p>
-		<br>
-		Color Festival!
-	</div>
-  </div>
-	<div class="mySlides fade">
-	  <img src="images/craft.jpg" style="width:100%" height="600px">
-	  <div class="text">
-		<p class="dates">7th November 2021</p>  
-		<br>
-		Craft Day!</div>
-	</div>
-	<div class="mySlides fade">
-		<img src="images/kitefly.jpg" style="width:100%" height="600px">
-		<div class="text" style="color:white">
-			<p class="dates">20th August 2021</p>
+		<div class="mySlides fade">
+			<img src="images/colorfest.jpg" style="width:100%" height="600px">
+			<div class="text" style="color:white">
+				<p class="dates">9th July 2021</p>
+				<br>
+				Color Festival!
+			</div>
+		</div>
+		<div class="mySlides fade">
+		<img src="images/craft.jpg" style="width:100%" height="600px">
+		<div class="text">
+			<p class="dates">7th November 2021</p>  
 			<br>
-			Kite Flying Festival!</div>
-	  </div>
+			Craft Day!</div>
+		</div>
+		<div class="mySlides fade">
+			<img src="images/kitefly.jpg" style="width:100%" height="600px">
+			<div class="text" style="color:white">
+				<p class="dates">20th August 2021</p>
+				<br>
+				Kite Flying Festival!</div>
+		</div>
+		
 	
-  
-	<!-- Next and previous buttons -->
-	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-	<a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
-  <br>
+		<!-- Next and previous buttons -->
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	<br>
   
   <!-- The dots/circles -->
   <div style="text-align:center">
@@ -157,22 +156,22 @@ session_start();
 	var slideIndex = 0;
 	showSlides();
 	
-	function showSlides() {
-	  var i;
-	  var slides = document.getElementsByClassName("mySlides");
-	  var dots = document.getElementsByClassName("dot");
-	  for (i = 0; i < slides.length; i++) {
-		slides[i].style.display = "none";  
-	  }
-	  slideIndex++;
-	  if (slideIndex > slides.length) {slideIndex = 1}    
-	  for (i = 0; i < dots.length; i++) {
-		dots[i].className = dots[i].className.replace(" active", "");
-	  }
-	  slides[slideIndex-1].style.display = "block";  
-	  dots[slideIndex-1].className += " active";
-	  setTimeout(showSlides, 1570); // Change image every 1.5 seconds
-	}
+		function showSlides() {
+		var i;
+		var slides = document.getElementsByClassName("mySlides");
+		var dots = document.getElementsByClassName("dot");
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+			}
+		slideIndex++;
+			if (slideIndex > slides.length) {slideIndex = 1}    
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				}
+		slides[slideIndex-1].style.display = "block";  
+		dots[slideIndex-1].className += " active";
+		setTimeout(showSlides, 1570); // Change image every 1.5 seconds
+		}
 	</script>
 
 	</body>
