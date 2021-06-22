@@ -289,11 +289,11 @@ nav ul{
 
 /* Start of Slider Section  */
 .carousel-container{
-    width: 60%;
+    width: 70%;
     margin: auto;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     overflow: hidden;
-    border: 1px solid black;
+    position: relative;
 }
 
 .carousel-slide{
@@ -301,7 +301,31 @@ nav ul{
     width: 100%;
     height: 500px;
 }
+.carousel-slide img{
+    width: 100%;
+}
 
+#prevBtn{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    left: 3%;
+    font-size: 30px;
+    color: white;
+    /* opacity: 0.8; */
+    cursor: pointer;
+}
+
+#nextBtn{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    right: 3%;
+    font-size: 30px;
+    color: white;
+    /* opacity: 0.8; */
+    cursor: pointer;
+}
 
 
 /* End of Slider Section  */
@@ -368,9 +392,6 @@ footer{
     padding: 10px 0;
     margin: 0 80px;
     border-bottom: 1px solid lightgray;
-}
-
-.social-text{
 }
 
 .social-media{
