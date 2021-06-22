@@ -284,30 +284,31 @@ nav ul{
 /* End Facilities Section */
 /* ######################################################### */
 
-nav ul li{
-    list-style-type: none;
-}
+
 
 
 /* Start of Slider Section  */
-
-#slider{
-    height: 110vh;
+.carousel-container{
+    width: 60%;
+    margin: auto;
+    box-sizing: border-box;
     overflow: hidden;
+    border: 1px solid black;
+}
+
+.carousel-slide{
     display: flex;
-}
-
-#slider img{
     width: 100%;
-    height: auto;
+    height: 500px;
 }
-
 
 
 
 /* End of Slider Section  */
 /* ################################################################## */
-
+nav ul li{
+    list-style-type: none;
+}
 
 
 nav ul li a{
@@ -346,7 +347,7 @@ footer{
     justify-content: space-between;
 }
 
-img{
+.social-media-icon{
     padding: 0;
     margin: 0;
     width: 70px;
