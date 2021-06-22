@@ -361,20 +361,21 @@ img{
 }
 
 .social {
-    border: 1px solid black;
     display: flex;
-    justify-content: space-between;
-    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    margin: 0 80px;
+    border-bottom: 1px solid lightgray;
 }
 
 .social-text{
-    border: 1px solid black;
 }
 
 .social-media{
-    width: 24%;
+    width: 13%;
     padding: 0 10px;
-    margin: 0;
+    margin: 0 10px;
     display: flex;
     justify-content: space-between;
     cursor: pointer;
