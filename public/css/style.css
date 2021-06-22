@@ -237,6 +237,29 @@ nav ul li a:hover{
 /* ######################################################### */
 
 
+
+/* Start of Slider Section  */
+
+#slider{
+    height: 110vh;
+    overflow: hidden;
+    display: flex;
+}
+
+#slider img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+/* End of Slider Section  */
+/* ################################################################## */
+
+
+
+
 /* Start of Footer Section */
 footer{
     bottom: 0;

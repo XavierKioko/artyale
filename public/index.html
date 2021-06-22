@@ -98,12 +98,36 @@
             </div>
         </div>
     </div>
-    
-<!-- 
+  
+    <section id="slider">
+        <img name="slide">
 
-    <section id="online-learning-slider">
-        Online learning available tec
-    </section> -->
+        <script>
+            var i = 0;
+            var images = [];
+            var time = 4000;
+
+            images[0] = 'images/sports.jpg';
+            images[1] = 'images/library.jpg';
+            images[2] = 'images/unsplash.jpg';
+
+            function changeImg(){
+                document.slide.src = images[i];
+
+                if(i < images.length -1){
+                    i++;
+                }
+                else{ 
+                    i = 0;
+                }
+
+                setTimeout("changeImg()", time);
+            }
+
+            window.onload = changeImg;
+        </script>
+    </section>
+    
 
 
     <footer>
