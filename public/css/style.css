@@ -48,29 +48,40 @@ nav ul{
 }
 
 nav ul li{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     list-style-type: none;
 }
 
 nav ul li a{
     text-decoration: none;
-    color: white;
-    padding: 20px 4px 0 4px;
+    color: whitesmoke;
+    padding: 0 20px;
+    
 }
 
-nav ul li a :active{
-    text-decoration: none;
-    color: white;
-    padding: 20px 4px 0 4px;
-    border-bottom: 1px solid black;
+.logo{
+    padding: 5px;
+    /* width: 150px;
+    height: 100px;    
+    margin-left: 10px;
+    margin-top: 10px; */
 }
+nav ul li::after{
+    width: 0%;
+    /* content: ''; */
+    height: 2px;
+    background: #fae8da;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+nav ul li a :hover{
+    border-bottom: 1px solid white;
 
-nav ul li a:hover{
-    border-radius: 10px;
-    padding: 4px;
-    color: #000;
-    font-weight: bold;
-    border-bottom: 3px solid black;
 }
+/* nav ul li:hover::after{
+    width: 100%;
+} */
 /* End Header Section */
 /* ################################################################### */
 
@@ -85,6 +96,7 @@ nav ul li a:hover{
 }
 
 .section1 h1{
+    
     color: #ede4d9;
     padding: 0;
     line-height: 50px;
@@ -105,24 +117,32 @@ nav ul li a:hover{
     text-align: center;
 }
 
-.btn-1{
-    background-color:#7d9ab9;
-    padding: 0.7rem 1rem;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    border-radius: 10px;
+
+.section1 button{
+ margin-left: 430px;
+ margin-bottom: 80px;
+ margin-top: 30px;
+ outline: 0;
+ background: none;
+ color: #fff;
+ font-size: 14px;
+ text-transform: uppercase;
+ width: 150px;
+ padding: 15px;
+ border: 2.5px solid #cfd3ca;
+ border-radius: 25px;
+ cursor: pointer;
+ transition: 0.5s;
+ transition-property: background, transform;
+ margin: 0 auto;
 }
-/* End Slider Section */
-/* ################################################# */
-
-
-/* Start of Header */
-.wrapper{
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.568), rgba(0, 0, 0, .5)),url('../images/yale.jpg');
-    background-position: center;
-    background-size: cover;
-    top: 0;
+.section1 button:hover, .section1 button:active, .section1 button:focus{
+ background: #7d9ab9;
+ transform: scale(1.1);
+}
+.features{
+    margin-top: 4%;
+    margin-bottom: 2%;
 }
 
 nav{
@@ -134,6 +154,11 @@ nav{
     justify-content: space-between;
     /* position:fixed; /*this does the header to stick*/
     /* top:0; */ 
+}
+.popular_courses{
+    background-color: white;
+    color: #344b52;
+    
 }
 
 nav img{
@@ -164,6 +189,7 @@ nav ul{
 .popular_courses h1{
     margin-top: 5%;
     text-align: center;
+    color: #344b52;
 }
 
 .courses{
@@ -175,9 +201,24 @@ nav ul{
     padding: 0 10px 10px 10px; 
     margin-top: 0;
 }
-
+/* 
+#courses img{
+    width: 210px;
+    height: 210px;
+    border-radius: 10px;    
+    border: 2px solid white;
+    box-shadow: 10px 10px 0px 0px rgba(207,211,202,0.62);
+-webkit-box-shadow: 10px 10px 0px 0px rgba(207,211,202,0.62);
+-moz-box-shadow: 10px 10px 0px 0px rgba(207,211,202,0.62);
+    margin: auto;
+} */
 .courses > *{
     flex: 1 1 160px;
+}
+#courses{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
 }
 
 .courses :first-child img{
@@ -196,6 +237,15 @@ nav ul{
     margin: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+/* .photgraphy img:hover {
+    transform: scale(1.15);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+  }
+.photography img {
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin:30px;
+  } */
 
 .course-card :hover{
     cursor: pointer;
@@ -241,6 +291,12 @@ nav ul{
     flex-wrap: wrap;
     padding: 0 10px 10px 10px; 
     margin-top: 0;
+}
+
+#facility{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
 }
 
 .facilities > *{
@@ -331,32 +387,7 @@ nav ul{
 
 /* End of Slider Section  */
 /* ################################################################## */
-nav ul li{
-    list-style-type: none;
-}
 
-
-nav ul li a{
-    text-decoration: none;
-    color: white;
-    padding: 20px 4px 0 4px;
-}
-
-nav ul li a :active{
-    text-decoration: none;
-    color: white;
-    padding: 20px 4px 0 4px;
-    border-bottom: 1px solid black;
-}
-
-nav ul li a:hover{
-    /* background-color: coral; */
-    border-radius: 10px;
-    padding: 4px;
-    color: #000;
-    font-weight: bold;
-    /* font-size: 1.2rem; */
-    border-bottom: 3px solid black;}
 
 
 /* ################################################################# */
@@ -467,7 +498,7 @@ footer{
 .card:hover{
     transform: rotateY(180deg);
 }
-    
+
 .thefront{
         position: relative;
         width:100%;
