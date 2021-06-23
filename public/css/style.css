@@ -30,6 +30,7 @@ nav img{
     align-items: center;
     cursor: pointer;
 }
+
 nav img :hover{
     margin-left: 40px;
     display: flex;
