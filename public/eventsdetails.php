@@ -10,7 +10,7 @@ $_SESSION['paintsession']="paintsession";
         <meta name="viewport" content="width=device-width,initial-scale=1.0">	
     </head>
     <body >
-        <div class>
+        <div class="wrapper">
             <div class="detailsheading">
                 <div class="evehdng" id="evheading"><h1>Events Details</h1></div>
              <a  href="#yalemap" class="mapnav">Get Directions</a>
@@ -33,7 +33,7 @@ $_SESSION['paintsession']="paintsession";
                     <br><br>
                     <form action="register.php">
                         <input type="hidden" name="paintnight">
-                        <button type="submit" class="btn btn-outline-info">Attend Event</button>
+                     
                     </form>
                 </div>
                   
