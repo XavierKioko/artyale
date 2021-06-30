@@ -1,3 +1,4 @@
 lets have our notes here.
     - colors to use: []
     - animation libraries: []
+    use this link for color codes (https://colorpalettes.net/color-palette-1237/)
