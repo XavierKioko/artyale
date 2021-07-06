@@ -4,23 +4,26 @@
 	
 	    <!-- Latest compiled and minified CSS -->
        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="st.css">
 		<link rel="stylesheet" type="text/css" href="main.css">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">	
 	</head>
 	<body>
-		<nav>
-            <img href="index.html" src="images/yaleLogo.png" class="img" alt="logo"> 
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="courses.html">COURSES</a></li>
-                <li><a href="events.html">EVENTS</a></li>              
-                <li><a href="news.html">NEWS</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-            </ul>
-        </nav>
-        
+		<div class="mywrapper">
+	
+          
+			<nav>
+				<img src="images/yaleLogo2.png" class="logo" alt="logo"> 
+				<ul class="header-links">
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">ABOUT</a></li>
+					<li><a href="courses.html">COURSES</a></li>
+					<li><a href="events.html">EVENTS</a></li>              
+					<li><a href="news.html">NEWS</a></li>
+					<li><a href="#">CONTACT</a></li>
+				</ul>
+				
+			</nav>
         
 		<!-- Slideshow container -->
 		<div class="Slideshow-container">
@@ -80,39 +83,55 @@
 		  </form>
 		  
 	  </div> 
-	  <div class="exhibitions">
-		 <div class="head"style="background-color:#DCE1E3;height:100px;padding-top:50px;padding-bottom:90px;"><h1>Award Winning Exhibitions 2020</h1></div>  
+	  
+		 <div class="head"><h1>Award Winning Exhibitions 2020</h1></div>  
 	    
-		 <div class="exhibitionsimages" style="background-color: #DCE1E3";>
+		 <div class="exhibitionsimages">
 			 <div class="exhibitionsimg" style="background-color:white;">
-				<a href="img1.html"> <img src="images/img1.jpg" width="240px" height="200px"></a>
-				 <div id="image1des">Lorem ipsum dolor sit amet</div>
+				<a href="exhibition1.html"> <img src="images/img1.jpg" width="100%" height="200px"></a>
+				 <p>Lorem ipsum dolor sit amet</p>
 			 </div>
 			 <div class="exhibitionsimg" style="background-color:white">
-			<a href="img2.html"><img src="images/img2.jpg" width="240px" height="200px"></a>
-				<div id="image2des">Lorem ipsum dolor sit amet</div>
+			<a href="exhibition2.html"><img src="images/img2.jpg" width="100%" height="200px"></a>
+				<p>Lorem ipsum dolor sit amet</p>
 			</div>
 			<div class="exhibitionsimg" style="background-color:white">
-			<a href="img3.html"><img src="images/img3.jpg" width="240px" height="200px"></a>
-				<div id="image3des">Lorem ipsum dolor sit amet</div>
+			<a href="exhibition3.html"><img src="images/img3.jpg" width="100%" height="200px"></a>
+				<p>Lorem ipsum dolor sit amet</p>
 			</div>
 			<div class="exhibitionsimg" style="background-color:white" >
-				<a href="img4.html"><img src="images/img4.jpg" width="240px" height="200px" ></a>
-				<div id="image4des">Lorem ipsum dolor sit amet</div>
-			</div>
-			<div class="exhibitionsimg" style="background-color:white" >
-				<a href="img5.html"><img src="images/img5.jpg" width="240px" height="200px" ></a>
-				<div id="image4des">Lorem ipsum dolor sit amet</div>
+				<a href="exhibition4.html"><img src="images/img4.jpg" width="100%" height="200px" ></a>
+				<p>Lorem ipsum dolor sit amet</p>
 			</div>
 			
 		 </div>
-	  </div>
+	
 	  <br><br>
 	  <div class="moreexhibitions">
-		<button type="submit" class="btn btn-outline-primary">More Exhibitions</button>
+		  <form action="allexhibitions.html"><button type="submit" class="btn btn-outline-primary">All Exhibitions</button></form>
+		
 	</div>
 	<br><br>
+	<div class="sponsorhead"><h1 >Our Sponsors</h1></div>
 	
+	<div class="sponsors" >
+		
+		<div class="sponsoricon">
+			<img src="images/crown.png">
+		</div>
+		<div class="sponsoricon">
+			<img src="images/ibm.PNG">
+		</div>
+		<div class="sponsoricon">
+			<img src="images/CANON.PNG">
+		</div>
+		<div class="sponsoricon">
+			<img src="images/bbc.jpg">
+		</div>
+		<div class="sponsoricon">
+			<img src="images/CANON.PNG">
+		</div>
+	</div>
   </div>
   <script>
 	var slideIndex = 0;
@@ -135,5 +154,6 @@
 	  setTimeout(showSlides, 1570); // Change image every 5 seconds
 	}
 	</script>
+	</div>
 	</body>
 </html>
