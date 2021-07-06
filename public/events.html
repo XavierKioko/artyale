@@ -1,12 +1,160 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    events 
-</body>
+<html>
+	<head>
+		<title>Public Events and Exhibitions</title>
+	
+	    <!-- Latest compiled and minified CSS -->
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="st.css">
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">	
+	</head>
+	<body>
+		<div class="mywrapper">
+	
+          
+			<nav>
+				<img src="images/yaleLogo2.png" class="logo" alt="logo"> 
+				<ul class="header-links">
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">ABOUT</a></li>
+					<li><a href="courses.html">COURSES</a></li>
+					<li><a href="events.html">EVENTS</a></li>              
+					<li><a href="news.html">NEWS</a></li>
+					<li><a href="#">CONTACT</a></li>
+				</ul>
+				
+			</nav>
+        
+		<!-- Slideshow container -->
+		<div class="Slideshow-container">
+	<!-- Full-width images with number and caption text -->
+	<div class="mySlides fade">
+	  <img src="images/paintnight.jpg" style="width:100%" height="600px">
+	  <div class="text">
+		  <p class="dates">30th June 2021</p>
+		  <br>
+		  Paint Night!
+		</div>
+</div>
+
+	  <div class="mySlides fade">
+	
+	  <img src="images/colorfest.jpg" style="width:100%" height="600px">
+	  <div class="text" style="color:white">
+		<p class="dates">9th July 2021</p>
+		<br>
+		Color Festival!
+	</div>
+  </div>
+	<div class="mySlides fade">
+	  <img src="images/craft.jpg" style="width:100%" height="600px">
+	  <div class="text">
+		<p class="dates">7th November 2021</p>  
+		<br>
+		Craft Day!</div>
+	</div>
+	<div class="mySlides fade">
+		<img src="images/kitefly.jpg" style="width:100%" height="600px">
+		<div class="text" style="color:white">
+			<p class="dates">20th August 2021</p>
+			<br>
+			Kite Flying Festival!</div>
+	  </div>
+	
+  
+	<!-- Next and previous buttons -->
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+	<span class="dot" onclick="currentSlide(1)"></span>
+	<span class="dot" onclick="currentSlide(2)"></span>
+	<span class="dot" onclick="currentSlide(3)"></span>
+	<span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+  <div class="Secondary">
+	  <div class="moreevents" >
+
+		 <form action="eventsdetails.html">
+			<button type="submit" class="btn btn-outline-info">More Event Details</button>
+		  </form>
+		  
+	  </div> 
+	  
+		 <div class="head"><h1>Award Winning Exhibitions 2020</h1></div>  
+	    
+		 <div class="exhibitionsimages">
+			 <div class="exhibitionsimg" style="background-color:white;">
+				<a href="exhibition1.html"> <img src="images/img1.jpg" width="100%" height="200px"></a>
+				 <p>Lorem ipsum dolor sit amet</p>
+			 </div>
+			 <div class="exhibitionsimg" style="background-color:white">
+			<a href="exhibition2.html"><img src="images/img2.jpg" width="100%" height="200px"></a>
+				<p>Lorem ipsum dolor sit amet</p>
+			</div>
+			<div class="exhibitionsimg" style="background-color:white">
+			<a href="exhibition3.html"><img src="images/img3.jpg" width="100%" height="200px"></a>
+				<p>Lorem ipsum dolor sit amet</p>
+			</div>
+			<div class="exhibitionsimg" style="background-color:white" >
+				<a href="exhibition4.html"><img src="images/img4.jpg" width="100%" height="200px" ></a>
+				<p>Lorem ipsum dolor sit amet</p>
+			</div>
+			
+		 </div>
+	
+	  <br><br>
+	  <div class="moreexhibitions">
+		  <form action="allexhibitions.html"><button type="submit" class="btn btn-outline-primary">All Exhibitions</button></form>
+		
+	</div>
+	<br><br>
+	<div class="sponsorhead"><h1 >Our Sponsors</h1></div>
+	
+	<div class="sponsors" >
+		
+		<div class="sponsoricon">
+			<img src="images/crown.png">
+		</div>
+		<div class="sponsoricon">
+			<img src="images/ibm.PNG">
+		</div>
+		<div class="sponsoricon">
+			<img src="images/CANON.PNG">
+		</div>
+		<div class="sponsoricon">
+			<img src="images/bbc.jpg">
+		</div>
+		<div class="sponsoricon">
+			<img src="images/CANON.PNG">
+		</div>
+	</div>
+  </div>
+  <script>
+	var slideIndex = 0;
+	showSlides();
+	
+	function showSlides() {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("dot");
+	  for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+	  }
+	  slideIndex++;
+	  if (slideIndex > slides.length) {slideIndex = 1}    
+	  for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	  setTimeout(showSlides, 1570); // Change image every 5 seconds
+	}
+	</script>
+	</div>
+	</body>
 </html>
+>>>>>>> Public_Events

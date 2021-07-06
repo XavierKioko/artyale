@@ -1,0 +1,311 @@
+  *{
+    margin:0;
+    padding:0;
+  } 
+  
+.wrapper{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.568), rgba(0, 0, 0, .5)),url('../images/yale.jpg');
+    background-position: center;
+    background-size: cover;
+    top: 0;
+    width:100%;
+    
+}
+
+nav{
+    width: 100%;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.363);
+    line-height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav img{
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+nav img :hover{
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    margin-right: 1.9rem;
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 20px 4px 0 4px;
+}
+
+nav ul li a :active{
+    text-decoration: none;
+    color: white;
+    padding: 20px 4px 0 4px;
+    border-bottom: 1px solid black;
+}
+
+nav ul li a:hover{
+    border-radius: 10px;
+    padding: 4px;
+    color: #000;
+    font-weight: bold;
+    border-bottom: 3px solid black;
+}
+
+#yalemap{
+    margin-left:300px;
+    font-size:20px;
+     }
+     .left_evnts{
+      padding-bottom:15px;
+      margin-left:300px;
+     }
+     .right_evnts{
+      background-color:f4f4f4;
+      padding-bottom:15px;
+     }
+     .mapnav{
+         padding-left: 100px;
+         font-size: 20px;
+         text-decoration: none;
+     }
+     #mapnav:hover{
+         color:brown;
+     }
+     .directions{
+        margin-left: 200px;
+        margin-top: 30px;
+        display:flex;
+     }
+     #evheading img{
+        width:30px;
+        margin-left:300px;
+        margin-top:200px;
+     }
+     #evheading p{
+        margin-left:250px;
+        font-size:25px;
+     }
+     .toparrow{
+         margin-left:200px;
+         margin-top: 300px;
+     }
+     .evntspage_headers{
+    
+        height:100px;
+        padding-top:40px;
+     }
+     .exhibitionsimg{
+         background-color:white;
+         box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+        height:100%;
+         border: 1px solid #ddd;
+         border-radius: 4px;
+         margin:20px;
+         width:100%;
+         padding:20px;
+         margin-top: 5px;
+     }
+    
+  
+     .exhibitionsimg img{
+        width:100%;
+        transition: 1s ease;
+    }
+    .exhibitionsimg:hover{
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        transition: 0.5s ease;
+        }
+ .pnt{
+            display:flex;
+          }
+.evebtn{
+            float: right;
+          }
+   
+      * {box-sizing:border-box}
+
+      /* Slideshow container */
+      .slideshow-container {
+        position: relative;
+        background-size: cover;
+      
+      }
+      
+      /* Hide the images by default */
+      .mySlides {
+      
+        background-size:cover;
+      }
+      
+      /* Next & previous buttons */
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+      
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+      }
+      .schedule{
+        text-align: center;
+        font-family:sans-serif;
+        
+      }
+      /* Caption text */
+      .text {
+        color:black;
+        font-family:sans-serif;
+        font-size: 30px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+      
+      /* The dots/bullets/indicators */
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      
+      .active, .dot:hover {
+        background-color: #717171;
+      }
+      
+      /* Fading animation */
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      
+      @-webkit-keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+      }
+      
+      @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+      }
+      .exhibitions{
+      margin-top: 30px;
+      text-align:center;
+      font-family: sans-serif;
+      
+      
+      }
+     
+       h1{
+       
+       font-size: 25px;
+      }
+      h2{
+        color:darkslategray;
+        font-size: 20px;
+       }
+       .moreevents{
+         margin-top:30px;
+         text-align: center;
+       }
+      .exhibitionsimages{
+        width:100%;
+       
+        display: flex;
+      
+      }
+    .moreexhibitions{
+            text-align: center;
+     }
+    .eventsdetailsheader{
+    margin-top: 10px;
+    text-align: center;
+ }
+.detailsheading{
+display:flex;
+width:100%;
+margin-top:40px;
+          }
+
+.sponsors{
+  display:flex;
+  width:100%;
+ 
+}
+.sponsoricon{
+  padding:20px;
+  width:100%;
+
+}
+.sponsoricon img{
+  border-radius: 50%;
+  width:100%;
+  height:200px;
+}
+.sponsorhead{
+  text-align: center;
+}
+.head{
+  margin-top:30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.exhibitionsimg{
+  width:100%;
+}
+
+          /*
+          .images{
+              opacity: 0;
+              transform: opacity 2ms ease-in;
+
+          }
+          .images.appear{
+              opacity: 1;
+          }
+   
