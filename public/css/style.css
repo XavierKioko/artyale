@@ -80,6 +80,10 @@ nav ul li::after{
 nav ul li a :hover{
     border-bottom: 1px solid white;
 }
+
+nav ul li a :active{
+    border-bottom: 1px solid white;
+}
 /* End Header Section */
 /* ################################################################### */
 
