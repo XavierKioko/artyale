@@ -49,13 +49,13 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
-    color: white;
+    color: black;
     padding: 20px 4px 0 4px;
 }
 
 nav ul li a :active{
     text-decoration: none;
-    color: white;
+    color: aqua;
     padding: 20px 4px 0 4px;
     border-bottom: 1px solid black;
 }
@@ -254,7 +254,6 @@ nav ul li a:hover{
        }
       .exhibitionsimages{
         width:100%;
-       
         display: flex;
       
       }
@@ -274,16 +273,17 @@ margin-top:40px;
 .sponsors{
   display:flex;
   width:100%;
+  text-align: center;
+  
  
 }
 .sponsoricon{
   padding:20px;
-  width:100%;
-
+  
 }
 .sponsoricon img{
   border-radius: 50%;
-  width:100%;
+  width:200px;
   height:200px;
 }
 .sponsorhead{
