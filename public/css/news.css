@@ -415,12 +415,14 @@ img{
     margin-right: 20px;
     width: 200px;
 } */
+
 .card-img-top{
     width: 100%;
     height: 25vw;
     object-fit: cover;
     
 }
+
 /* .card-deck{
     position: relative;
     top: 0;
@@ -436,7 +438,8 @@ img{
     width: 100%;
     height: 100%;
    } */
-   .thefront{
+
+.thefront{
     position: relative;
     width:100%;
     height:100%; 
@@ -444,16 +447,21 @@ img{
 }
 
 .theback{
-  position: absolute;
-  width:100%;
-  height:100%;
-  backface-visibility: hidden;
-  overflow: hidden;
-  text-align: center;
-  width: 100%;
-  padding: 5px 10px;
-  transform: rotateY(180deg);
-  
+    position: absolute;
+    width:100%;
+    height:100%;
+    backface-visibility: hidden;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    padding: 5px 10px;
+    transform: rotateY(180deg);
+    
+        /* display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+     */
 } 
     .cardDetails{
         font-family: 'Viaoda Libre', cursive;
