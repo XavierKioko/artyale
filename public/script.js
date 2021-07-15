@@ -1,38 +1,22 @@
-const firebaseConfig = {
-  apiKey: "AIzaSyCdnna5TMABhs0kOfKkDw0QENNnKqbKIQE",
-  authDomain: "hciyale-ceac5.firebaseapp.com",
-  databaseURL: "https://hciyale-ceac5-default-rtdb.europe-west1.firebasedatabase.app",
-  projectId: "hciyale-ceac5",
-  storageBucket: "hciyale-ceac5.appspot.com",
-  messagingSenderId: "249380512206",
-  appId: "1:249380512206:web:e7221d9d8bc12c859dcb9f"
-};
-firebase.initializeApp(firebaseConfig);
+ const user_form=document.querySelector('#user_reg');
 
-var messagesRef=firebase.database().ref('messages');
-$(document).ready(function() {
-	var a = document.getElementById('contactform');
-	a.addEventListener('submit', submitForm);
+ //saving data to firestore
+ user_form.addEventListener('submit',(e)=>{
+   e.preventDefault();
+   db.collection('Yale_users').add({
+     name:user_form.fullname.value,
+     email:user_form.email.value,
+     event_name:user_form.evnt_name.value
+   });
+   user_form.fullname.value='';
+   user_form.email.value=''; 
+   user_form.evnt_name.value='';
+
+   alert('Successfully registered for Event')
+ })
+
+db.collection('Yale_users').get().then((snapshot)=>{
+snapshot.docs.forEach(doc => {
+  console.log(doc.data());
 });
-function submitForm(e){
-    e.preventDefault();
-
-    var name=getInputVal('fname');
-    var email=getInputVal('email');
-
-    saveMessage(name,email);
-   
-}
-function getInputVal(id){
- return document.getElementById(id).value;
-}
-function saveMessage(name,email){
-  var newMessageRef=messagesRef.push();
-  newMessageRef.set({
-    name:name,
-    email:email
-  })
-}
-
-
-
+});
