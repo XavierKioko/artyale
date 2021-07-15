@@ -319,13 +319,38 @@ margin-top:40px;
   width:100%;
 }
 
-          /*
-          .images{
-              opacity: 0;
-              transform: opacity 2ms ease-in;
+.social-media-icon{
+  padding: 0;
+  margin: 0;
+  width: 70px;
+}
 
-          }
-          .images.appear{
-              opacity: 1;
-          }
-   
+.contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  margin: 0 80px;
+  border-bottom: 1px solid lightgray;
+}
+
+.social-media{
+  width: 13%;
+  padding: 0 10px;
+  margin: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.social-media-icon{
+  width: 20px;
+}
