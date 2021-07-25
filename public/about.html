@@ -43,8 +43,26 @@
             <br>
             <br>
 
-            <a href="applicationpage.html" ><button class="btn-1">Apply To Us</button></a>
-           
+            <!-- <a href="#" ><button class="btn-1">Apply To Us</button></a> -->
+           <!--Trigger-->
+<a class="login-trigger" href="#" data-target="#login" data-toggle="modal">Login</a>
+
+<div id="login" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    
+    <div class="modal-content">
+      <div class="modal-body">
+        <button data-dismiss="modal" class="close">&times;</button>
+        <h4>Login</h4>
+        <form>
+          <input type="text" name="username" class="username form-control" placeholder="Username"/>
+          <input type="password" name="password" class="password form-control" placeholder="password"/>
+          <input class="btn login" type="submit" value="Login" />
+        </form>
+      </div>
+    </div>
+  </div>  
+</div>
             <!--<a href="#" ><button class="btn-1">Login</button></a>-->
 
 
@@ -60,13 +78,15 @@
         <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
         <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
       </ol>
-      <!-- slide wrapper -->
+      <!--------------------------------------------- slide wrapper------------------------------------------------- -->
       <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
             <img src="sports.jpg" style="width:100%" height="800px" class="d-block w-100" alt="sport">
             <div class="carousel-caption d-none d-md-block">
                 <h5>Mission</h5>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum......................................................................................................................fgfdhd..............................</p>
+                <p>The mission of the Yale School of Art is to provide students with intellectually informed, hands-on instruction in the practice of an array of visual arts media within the context of a liberal arts university. As a part of the first institution of higher learning to successfully integrate a studio-based education into such a broad pedagogical framework, the Yale School of Art has a long and distinguished history of training artists of the highest caliber. A full-time faculty of working artists in conjunction with a diverse cross-section of accomplished visiting artists collaborate to design a program and foster an environment where the unique talents and perspectives of individual students can emerge and flourish.
+
+                  The School of Art is founded on the belief that art is a fundamental force in national and international culture, and that one of the primary standards by which societies are judged is the quality, creative freedom, critical insight, and formal and technical innovation of the visual art they produce. The Yale School of Art teaches at the graduate and undergraduate levels, and consequently the student body consists of those whose primary or exclusive focus is art as well as those for whom art is an essential part of a varied course of inquiry. The school currently offers degrees and undergraduate majors in the areas of graphic design, painting/printmaking, photography, and sculpture.</p>
             </div>
             
             </div>
@@ -101,7 +121,7 @@
 
 
     
-  <!--.............................................NEW SECTION.............................................-->
+<!--.............................................NEW SECTION.............................................-->
   <div class="card-deck">
     <div class="card">
       <img src="..." class="card-img-top" alt="...">
@@ -282,7 +302,7 @@
       <script>  
         $('.carousel').carousel(
             {
-        interval: 3000
+        interval: 10000
           }
           ) 
         </script>
