@@ -89,6 +89,11 @@ background-size: cover;
   background-size: cover;
   top: 0;
 }
+/* 
+.course-card:hover{
+transform: rotateY(180deg);
+} */
+/*--------------END OF HEADER----------------*/
 
 nav{
   width: 100%;
@@ -112,14 +117,9 @@ nav img :hover{
   align-items: center;
   cursor: pointer;
 }
-
-nav ul{
-  margin: 0;
-  padding: 0;
-  margin-right: 1.9rem;
-  display: flex;
-  justify-content: space-between;
-  width: 35%;
+ 
+.form-title {
+  margin: -2rem 0rem 2rem;
 }
 
 nav ul li{
@@ -165,4 +165,3 @@ nav ul li a :active{
 .course-card:hover{
 transform: rotateY(180deg);
 }
-/*--------------END OF HEADER----------------*/
