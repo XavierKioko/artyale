@@ -99,13 +99,16 @@ nav ul li a :active{
 
 .section1 h1{
     
-    color: #ede4d9;
+    color: #e4d2bb;
     padding: 0;
     line-height: 50px;
     font-size: 50px;
     margin-top: 200px;
     text-align: center;
     letter-spacing: 8px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
 }
 
 .section1 a{
@@ -117,6 +120,12 @@ nav ul li a :active{
 .section1 p{
     color: #ede4d9;
     text-align: center;
+    width: 50%;
+    /* border: 1px solid black; */
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
