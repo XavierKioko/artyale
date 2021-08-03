@@ -162,6 +162,19 @@ nav ul li a :active{
 /* End Header Section */
 /* ################################################################### */
 
-.course-card:hover{
+/* .course-card:hover{
 transform: rotateY(180deg);
+} */
+
+.carousel-caption{
+  font-size: 17px;
+  text-align: center;
+}
+.carousel-item {
+  transition: transform 2.6s ease-in-out;
+}
+
+.carousel-fade .active.carousel-item-start,
+.carousel-fade .active.carousel-item-end {
+  transition: opacity 0s 2.6s;
 }
