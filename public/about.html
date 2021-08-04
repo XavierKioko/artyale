@@ -6,15 +6,16 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
-    <link rel='stylesheet' type='text/css' href='about.css' />
     
     <div class="wrapper">
     <!--NAVIGATION-->
@@ -30,7 +31,7 @@
     </nav>
     <!-- SCHOOL TITLE -->
         
-        <div class="section1">
+        <div class="section1" data-aos="fade-down" data-aos-duration="2000">
             <h1>ABOUT YALE</h1>
                 <p>Live by YALE and survive by YALE</p>
                 <p>The Yale School of Art is a graduate school that confers MFAs in Graphic Design, Painting/Printmaking, Photography, and Sculpture; and offers undergraduate-level art courses to Yale College students. Our website exists as an ongoing collaborative experiment in digital publishing and information sharing. It functions as a wiki—all members of the School of Art community have the ability to add new, and edit most existing content.</p>
@@ -40,34 +41,35 @@
                 A top global university,<br> Yale pushes the boundaries of discovery to make a better world while providing students with life-changing opportunities.
             </p>
             <br>
-            <br>
-            <br>
-
-            <!-- <a href="#" ><button class="btn-1">Apply To Us</button></a> -->
+            <!-- <a href="applicationpage.html" ><button class="btn-1">Apply To Us</button></a> -->
            <!--Trigger-->
-<a class="login-trigger" href="#" data-target="#login" data-toggle="modal">Login</a>
-
-<div id="login" class="modal fade" role="dialog">
-  <div class="modal-dialog">
+              <!-- <a class="login-trigger" href="#" data-target="#login" data-toggle="modal">Join Us Now</a> -->
+              <a class="login-trigger" data-toggle="modal" href="#" data-target="#login"><button class="btn-1">Join Us Now</button></a>
+              <div id="login" class="modal fade" role="dialog">
+                <div class="modal-dialog">
     
-    <div class="modal-content">
-      <div class="modal-body">
-        <button data-dismiss="modal" class="close">&times;</button>
-        <h4>Login</h4>
-        <form>
-          <input type="text" name="username" class="username form-control" placeholder="Username"/>
-          <input type="password" name="password" class="password form-control" placeholder="password"/>
-          <input class="btn login" type="submit" value="Login" />
-        </form>
-      </div>
-    </div>
-  </div>  
-</div>
-            <!--<a href="#" ><button class="btn-1">Login</button></a>-->
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <!-- <button data-dismiss="modal" class="close">&times;</button> -->
+                    <h4 style="text-align: center;">APPLY HERE</h4>
+                    <form>
+                      <input type="text" name="username" class="username form-control" placeholder="Username"/>
+                      <br>
+                      <input type="password" name="password" class="password form-control" placeholder="Password"/>
+                      <br>
+                      <input type="password" name="password" class="password form-control" placeholder="Confirm Password"/>
+                      <br>
+                      <input style="text-align: center; " class="btn-2" type="submit" value="Join" />
+                    </form>
+                  </div>
+                </div>
+          </div>  
+        </div>
+                      <!--<a href="#" ><button class="btn-1">Login</button></a>-->
 
 
         </div>
-
+<br><br><br>
     </div>
 
      <!------------------------------------------- Slideshow container ------------------------------------------------>
@@ -79,7 +81,7 @@
         <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
       </ol>
       <!--------------------------------------------- slide wrapper------------------------------------------------- -->
-      <div class="carousel-inner" role="listbox">
+      <!-- <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
             <img src="sports.jpg" style="width:100%" height="800px" class="d-block w-100" alt="sport">
             <div class="carousel-caption d-none d-md-block">
@@ -160,13 +162,94 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-  </div>
+  </div> -->
 <!-- ....................................................End of Slideshow.......................................................... -->
 
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel" data-aos="fade-down"
+data-aos-duration="1000">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/school.jpeg" style="width:100%" height="900px" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5><b>School Mission </b></h5>
+        <p>The mission of the Yale School of Art is to provide students with intellectually informed, hands-on instruction in the practice of an array of visual arts media within the context of a liberal arts university. 
+          As a part of the first institution of higher learning to successfully integrate a studio-based education into such a broad pedagogical framework, the Yale School of Art has a long and distinguished history of training artists of the highest caliber.
+          A full-time faculty of working artists in conjunction with a diverse cross-section of accomplished visiting artists collaborate to design a program and foster an environment where the unique talents and perspectives of individual students can emerge and flourish.
 
+          The School of Art is founded on the belief that art is a fundamental force in national and international culture, and that one of the primary standards by which societies are judged is the quality, creative freedom, critical insight, and formal and technical innovation of the visual art they produce.
+          The Yale School of Art teaches at the graduate and undergraduate levels, and consequently the student body consists of those whose primary or exclusive focus is art as well as those for whom art is an essential part of a varied course of inquiry. 
+          The school currently offers degrees and undergraduate majors in the areas of graphic design, painting/printmaking, photography, and sculpture.</p>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+        </div>
+    
+    <!-- </div> -->
+    </div>
+    <div class="carousel-item">
+      <img src="images/school.jpeg" style="width:100%" height="900px" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5><b>Master of Fine Arts Degree (MFAs)</b></h5>
+        <p>The degree of Master of Fine Arts is the only degree offered by the School of Art. It is conferred by the University upon recommendation of the faculty after successful completion of all course work in residence and after a thesis presentation that has been approved by the faculty. It implies distinctive achievement on the part of students in studies in the professional area of their choice and demonstrated capacity for independent work. The minimum residence requirement is two years. All candidates’ work is reviewed by faculty at the end of each term. If the work is not considered satisfactory, the student may not be invited back to complete the program (see section on Review and Awards under Academic Regulations in the chapter General Information). All degree candidates are expected to be present at the Commencement exercises in May unless excused by the dean.
+
+          Course work for the Master of Fine Arts degree carries a minimum of sixty credits. The disposition of these credits varies according to the area of study and is agreed upon at the time of registration between the student and the student’s faculty adviser.</p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/school.jpeg" style="width:100%" height="900px" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5><b>Public Lectures and Exhibitions</b></h5>
+        <p>Each department has its own visitors program in which professionals from outside the School are invited to lecture to students or take part in critiques.
+
+          The School also facilitates a public all-school lecture program, in which ideas of general and cross-disciplinary importance are explored by visiting artists and members of the faculty in events typically hosted in the evening that are free and open to the public.
+          
+          The School of Art’s galleries in Green Hall and EIK at 32 Edgewood Avenue provide a year-round forum for the exhibition of work by students, faculty, and special guests in the four graduate departments of the School and the undergraduate program. Green Gallery is open to the public when exhibitions are scheduled, but open hours vary by semester. EIK is open during limited hours for specific exhibitions and events. Please refer to the Gallery & Publications page for more information.</p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
     
 <!--.............................................NEW SECTION.............................................-->
-  <div class="card-deck">
+  <!-- <div class="card-deck">
     <div class="card">
       <img src="images/potrait2.jpg" class="card-img-top" alt="potrait2">
       <div class="card-body">
@@ -178,15 +261,15 @@
       </div>
     </div>
     <div class="card">
-      <img src="images/potrait1.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
+      <img src="images/potrait1.jpg" class="card-img-top" alt="..."> -->
+      <!-- <div class="card-body">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
       </div>
       <div class="card-footer">
         <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
-    </div>
+      </div> -->
+    <!-- </div>
     <div class="card">
       <img src="..." class="card-img-top" alt="...">
       <div class="card-body">
@@ -197,57 +280,171 @@
         <small class="text-muted">Last updated 3 mins ago</small>
       </div>
     </div>
-  </div>
+  </div> -->
   
+<!-- ............................................................................................................................ -->
+<!--Carousel Wrapper-->
+<!-- <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel"> -->
 
+  <!--Controls-->
+  <!-- <div class="controls-top">
+    <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
+    <a class="btn-floating" href="#multi-item-example" data-slide="next"><i
+        class="fas fa-chevron-right"></i></a>
+  </div> -->
+  <!--/.Controls-->
+
+  <!--Indicators-->
+  <!-- <ol class="carousel-indicators">
+    <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+    <li data-target="#multi-item-example" data-slide-to="1"></li>
     
-<!-- .......................................................courses...................................................................................................... -->
-   <div class="popular_courses">
-        <h1>OUR STAFF</h1>
-        <div class="courses">
-            <div class="course-card">           
-                <img src="images/photography.jpg"  alt="cs">
-                <h3>CEO $ Founder</h3>  
-               <!-- <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                <p>yale1@example.com</p>
-                -->
-                <!--<p><button class="button">Contact</button></p> -->            
-            </div>
-            <div class="course-card">               
-                <img src="images/art.jpg" alt="business">
-                <h3>Art Director</h3>              
-            </div>
-            <div class="course-card">               
-                <img src="images/media.jpg" alt="media">
-                <h3>Editor</h3>              
-            </div>
-            <div class="course-card">
-                <img src="images/film.jpg" alt="arts">               
-                <h3>Role maker
-                    
-                </h3>
-            </div>
-           
+  </ol> -->
+  <!--/.Indicators-->
+
+  <!--Slides-->
+  <div class="carousel-inner" data-ride="carousel" role="listbox" style="background-color: white;">
+
+    <!--First slide-->
+    <div class="carousel-item active" >
+
+      <div class="col-md-3" style="float:left">
+       <div class="card mb-2">
+          <img class="card-img-top"
+            src="images/potrait2.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Resources</h4>
+            <p class="card-text">Get the yearly students or faculty resources about our school.</p>
+            <a class="btn btn-primary">Read More</a>
+          </div>
         </div>
+      </div>
+
+      <div class="col-md-3" style="float:left">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="images/potrait1.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+            <a class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3" style="float:left">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+            <a class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+      
+       <div class="col-md-3" style="float:left">
+       <div class="card mb-2">
+          <img class="card-img-top"
+            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+            <a class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+
     </div>
+    <!--/.First slide-->
 
+    <!--Second slide-->
+    <div class="carousel-item">
 
+      <div class="col-md-3" style="float:left">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+            <a class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3" style="float:left">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+            <a class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3" style="float:left">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+            <a class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-3" style="float:left">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+            <a class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!--/.Second slide-->
+
+   
+
+  </div>
+  <!--/.Slides-->
+
+</div>
+<!--/.Carousel Wrapper-->
+ <!-- ....................................................................................................................................    -->
+<!-- .......................................................courses...................................................................................................... -->
 
         <footer class="text-center text-lg-start bg-light text-muted">
 
-            <!-- Section: Social media 
+            <!-- Section: Social media  -->
             <section class="social">
                 <div class="social-text">
                     <span>Get connected with us on social networks:</span>
                 </div>
                 <div class="social-media">
-                    <img class="social-media-icon" src="images/instagram_icon.png" alt="Instagram">
-                    <img class="social-media-icon" src="images/facebook_icon.png" alt="Facebook">
-                    <img class="social-media-icon" src="images/twitter_icon.png" alt="Twitter">
-                    <img class="social-media-icon" src="images/youtube_icon.png" alt="Youtube">
+                    <a href="https://www.instagram.com/yaleschoolofart/" target="_blank" rel="noopener noreferrer"><img class="social-media-icon" src="images/instagram_icon.png" alt="Instagram"></a> 
+                    <a href="https://web.facebook.com/YaleSchoolofArt/?_rdc=1&_rdr" target="_blank" rel="noopener noreferrer"><img class="social-media-icon" src="images/facebook_icon.png" alt="Facebook"></a>
+                    <a href="https://twitter.com/YaleArtGallery" target="_blank" rel="noopener noreferrer"><img class="social-media-icon" src="images/twitter_icon.png" alt="Twitter"></a>
+                    <a href="https://www.youtube.com/channel/UCDwJT0mYodTSodcpH-hGmdA" target="_blank" rel="noopener noreferrer"><img class="social-media-icon" src="images/youtube_icon.png" alt="Youtube"></a>
                 </div>
             </section>
-            Section: Social media -->
+            <!-- Section: Social media -->
         
             <!-- Section: Links  -->
             <section class="">
@@ -268,8 +465,7 @@
                 <!-- Grid column -->
         
                 <!-- Grid column -->
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                    <!-- Links -->
+                <!-- <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                     <h6 class="text-uppercase fw-bold mb-4">
                     Products
                     </h6>
@@ -285,7 +481,7 @@
                     <p>
                     <a href="#!" class="text-reset">Laravel</a>
                     </p>
-                </div>
+                </div> -->
                 <!-- Grid column -->
         
                 <!-- Grid column -->
@@ -293,19 +489,16 @@
                     <!-- Links -->
                     <h6 class="text-uppercase fw-bold mb-4">
                     Useful links
-                    </h6>
-                    <p>
-                    <a href="#!" class="text-reset">Support the school</a>
-                    </p>
-                    <p>
-                    <a href="#!" class="text-reset">Visiting</a>
-                    </p>
-                    <p>
-                    <a href="#!" class="text-reset">Sitemap</a>
-                    </p>
-                    <p>
-                    <a href="#!" class="text-reset">Accessibility atYale</a>
-                    </p>
+                  </h6>
+                  <p>
+                  <a href="about.html" class="text-reset">About the school</a>
+                  </p>
+                  <p>
+                  <a href="events.html" class="text-reset">Events</a>
+                  </p>
+                  <p>
+                  <a href="news.html" class="text-reset">Latest News</a>
+                  </p>
                 </div>
                 <!-- Grid column -->
         
@@ -339,14 +532,19 @@
         </footer>
 
 <!-- <script src="js/wow.min.js"></script> -->
-        <script src="js/slider.js"></script>
-        
+        <!-- <script src="js/slider.js"></script> -->
+        <script>
+          AOS.init();
+        </script>
         <script src="js/jquery-1.11.0.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
       <script>  
+      
+
+        // $('#carouselFade').carousel();
         $('.carousel').carousel(
             {
-        interval: 10000
+        interval: 5000
           }
           ) 
         </script>
