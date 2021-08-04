@@ -178,7 +178,7 @@ transform: rotateY(180deg);
   text-align: center;
 }
 .carousel-item {
-  transition: transform 2.6s ease-in-out;
+  transition: transform 4.6s ease-in-out;
 }
 
 .carousel-fade .active.carousel-item-start,
@@ -193,6 +193,7 @@ transform: rotateY(180deg);
   overflow: hidden;
   top: 0;
   height: 100vh;
+  position: sticky;
 }
 
 .section1 h1{
@@ -550,3 +551,7 @@ footer{
   transform: rotateY(180deg);
 }
 /* End of Footer */
+
+#carouselExampleFade{
+  transition: transform 2.6s ease-in-out;
+}

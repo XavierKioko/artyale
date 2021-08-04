@@ -16,7 +16,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- <link rel='stylesheet' type='text/css' href='about.css' /> -->
     
     <div class="wrapper">
     <!--NAVIGATION-->
@@ -44,27 +43,29 @@
             <br>
             <!-- <a href="applicationpage.html" ><button class="btn-1">Apply To Us</button></a> -->
            <!--Trigger-->
-<!-- <a class="login-trigger" href="#" data-target="#login" data-toggle="modal">Join Us Now</a> -->
-<a class="login-trigger" data-toggle="modal" href="#" data-target="#login"><button class="btn-1">Join Us Now</button></a>
-<div id="login" class="modal fade" role="dialog">
-  <div class="modal-dialog">
+              <!-- <a class="login-trigger" href="#" data-target="#login" data-toggle="modal">Join Us Now</a> -->
+              <a class="login-trigger" data-toggle="modal" href="#" data-target="#login"><button class="btn-1">Join Us Now</button></a>
+              <div id="login" class="modal fade" role="dialog">
+                <div class="modal-dialog">
     
-    <div class="modal-content">
-      <div class="modal-body">
-        <!-- <button data-dismiss="modal" class="close">&times;</button> -->
-        <h4 style="text-align: center;">APPLY HERE</h4>
-        <form>
-          <input type="text" name="username" class="username form-control" placeholder="Username"/>
-          <br>
-          <input type="password" name="password" class="password form-control" placeholder="password"/>
-          <br>
-          <input style="text-align: center;" class="btn-1" type="submit" value="Login" />
-        </form>
-      </div>
-    </div>
-  </div>  
-</div>
-            <!--<a href="#" ><button class="btn-1">Login</button></a>-->
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <!-- <button data-dismiss="modal" class="close">&times;</button> -->
+                    <h4 style="text-align: center;">APPLY HERE</h4>
+                    <form>
+                      <input type="text" name="username" class="username form-control" placeholder="Username"/>
+                      <br>
+                      <input type="password" name="password" class="password form-control" placeholder="Password"/>
+                      <br>
+                      <input type="password" name="password" class="password form-control" placeholder="Confirm Password"/>
+                      <br>
+                      <input style="text-align: center; " class="btn-2" type="submit" value="Join" />
+                    </form>
+                  </div>
+                </div>
+          </div>  
+        </div>
+                      <!--<a href="#" ><button class="btn-1">Login</button></a>-->
 
 
         </div>
@@ -248,7 +249,7 @@ data-aos-duration="1000">
 </div>
     
 <!--.............................................NEW SECTION.............................................-->
-  <div class="card-deck">
+  <!-- <div class="card-deck">
     <div class="card">
       <img src="images/potrait2.jpg" class="card-img-top" alt="potrait2">
       <div class="card-body">
@@ -260,7 +261,7 @@ data-aos-duration="1000">
       </div>
     </div>
     <div class="card">
-      <img src="images/potrait1.jpg" class="card-img-top" alt="...">
+      <img src="images/potrait1.jpg" class="card-img-top" alt="..."> -->
       <!-- <div class="card-body">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -268,7 +269,7 @@ data-aos-duration="1000">
       <div class="card-footer">
         <small class="text-muted">Last updated 3 mins ago</small>
       </div> -->
-    </div>
+    <!-- </div>
     <div class="card">
       <img src="..." class="card-img-top" alt="...">
       <div class="card-body">
@@ -279,11 +280,11 @@ data-aos-duration="1000">
         <small class="text-muted">Last updated 3 mins ago</small>
       </div>
     </div>
-  </div>
+  </div> -->
   
 <!-- ............................................................................................................................ -->
 <!--Carousel Wrapper-->
-<div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+<!-- <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel"> -->
 
   <!--Controls-->
   <!-- <div class="controls-top">
@@ -302,20 +303,32 @@ data-aos-duration="1000">
   <!--/.Indicators-->
 
   <!--Slides-->
-  <div class="carousel-inner" role="listbox">
+  <div class="carousel-inner" data-ride="carousel" role="listbox" style="background-color: white;">
 
     <!--First slide-->
-    <div class="carousel-item active">
+    <div class="carousel-item active" >
 
       <div class="col-md-3" style="float:left">
        <div class="card mb-2">
           <img class="card-img-top"
-            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
+            src="images/potrait2.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Resources</h4>
+            <p class="card-text">Get the yearly students or faculty resources about our school.</p>
+            <a class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3" style="float:left">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="images/potrait1.jpg" alt="Card image cap">
           <div class="card-body">
             <h4 class="card-title">Card title</h4>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
               card's content.</p>
-            <a class="btn btn-primary">Button</a>
+            <a class="btn btn-primary">Read More</a>
           </div>
         </div>
       </div>
@@ -328,20 +341,7 @@ data-aos-duration="1000">
             <h4 class="card-title">Card title</h4>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
               card's content.</p>
-            <a class="btn btn-primary">Button</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-3" style="float:left">
-        <div class="card mb-2">
-          <img class="card-img-top"
-            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-              card's content.</p>
-            <a class="btn btn-primary">Button</a>
+            <a class="btn btn-primary">Read More</a>
           </div>
         </div>
       </div>
@@ -354,7 +354,7 @@ data-aos-duration="1000">
             <h4 class="card-title">Card title</h4>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
               card's content.</p>
-            <a class="btn btn-primary">Button</a>
+            <a class="btn btn-primary">Read More</a>
           </div>
         </div>
       </div>
@@ -373,7 +373,7 @@ data-aos-duration="1000">
             <h4 class="card-title">Card title</h4>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
               card's content.</p>
-            <a class="btn btn-primary">Button</a>
+            <a class="btn btn-primary">Read More</a>
           </div>
         </div>
       </div>
@@ -386,7 +386,7 @@ data-aos-duration="1000">
             <h4 class="card-title">Card title</h4>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
               card's content.</p>
-            <a class="btn btn-primary">Button</a>
+            <a class="btn btn-primary">Read More</a>
           </div>
         </div>
       </div>
@@ -399,7 +399,7 @@ data-aos-duration="1000">
             <h4 class="card-title">Card title</h4>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
               card's content.</p>
-            <a class="btn btn-primary">Button</a>
+            <a class="btn btn-primary">Read More</a>
           </div>
         </div>
       </div>
@@ -412,7 +412,7 @@ data-aos-duration="1000">
             <h4 class="card-title">Card title</h4>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
               card's content.</p>
-            <a class="btn btn-primary">Button</a>
+            <a class="btn btn-primary">Read More</a>
           </div>
         </div>
       </div>
@@ -429,7 +429,7 @@ data-aos-duration="1000">
 <!--/.Carousel Wrapper-->
  <!-- ....................................................................................................................................    -->
 <!-- .......................................................courses...................................................................................................... -->
-   
+
         <footer class="text-center text-lg-start bg-light text-muted">
 
             <!-- Section: Social media  -->
@@ -532,7 +532,7 @@ data-aos-duration="1000">
         </footer>
 
 <!-- <script src="js/wow.min.js"></script> -->
-        <script src="js/slider.js"></script>
+        <!-- <script src="js/slider.js"></script> -->
         <script>
           AOS.init();
         </script>
@@ -541,10 +541,10 @@ data-aos-duration="1000">
       <script>  
       
 
-        $('#carouselFade').carousel();
+        // $('#carouselFade').carousel();
         $('.carousel').carousel(
             {
-        interval: 4000
+        interval: 5000
           }
           ) 
         </script>
