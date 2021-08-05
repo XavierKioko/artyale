@@ -9,6 +9,10 @@ body {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.568), rgba(0, 0, 0, .5)),url('../images/yale.jpg');
 }
 
+.active-here{
+  color: rgb(82, 82, 199);
+}
+
 a{
   text-decoration: none;
 }

@@ -59,6 +59,9 @@ nav ul li a{
     
 }
 
+.active-here{
+    color: rgb(82, 82, 199);
+}
 .logo{
     padding: 5px;
     /* width: 150px;

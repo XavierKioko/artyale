@@ -25,7 +25,9 @@ text-align: center;
 font-family: 'Poppins', sans-serif;
 }
 
-
+.active-here{
+  color: rgb(82, 82, 199);
+}
 
 nav{
     width: 100%;
