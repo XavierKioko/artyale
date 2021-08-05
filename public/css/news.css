@@ -450,8 +450,18 @@ img{
     position: relative;
     width:100%;
     height:100%; 
+    overflow: hidden;
+    
+    border-radius: 10px;
+    /* border-radius: 20px; */
     backface-visibility: hidden;
 }
+/* 
+.thefront img{
+    overflow: hidden;
+    
+    border-radius: 10px;
+} */
 
 .theback{
     position: absolute;
@@ -460,6 +470,7 @@ img{
     backface-visibility: hidden;
     overflow: hidden;
     text-align: center;
+    border-radius: 10px;
     width: 100%;
     padding: 5px 10px;
     transform: rotateY(180deg);
@@ -469,6 +480,21 @@ img{
         -webkit-box-orient: vertical;  
         overflow: hidden;
      */
+} 
+
+.theback p{
+    margin: 10px 0;
+    white-space: nowrap;
+  overflow: hidden;
+  height: 30px;
+  text-overflow: ellipsis;
+} 
+
+.theback h3{
+    /* white-space: nowrap;
+  overflow: hidden; */
+  height: 90px;
+  /* text-overflow: ellipsis; */
 } 
     .cardDetails{
         font-family: 'Viaoda Libre', cursive;
