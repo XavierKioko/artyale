@@ -28,7 +28,7 @@ p :hover{
    width: 100%;
  } 
 .wrapper{
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.568), rgba(0, 0, 0, .5)),url('../images/yale.jpg') !important;
+  /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.568), rgba(0, 0, 0, .5)),url('../images/yale.jpg') !important; */
   background-position: center;
   background-size: cover;
   top: 0;
