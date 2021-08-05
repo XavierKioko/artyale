@@ -9,6 +9,20 @@ li{
 li :hover{
   text-decoration: none;
 }
+
+a{
+  text-decoration: none;
+}
+a :hover{
+  text-decoration: none;
+}
+
+p{
+  text-decoration: none;
+}
+p :hover{
+  text-decoration: none;
+}
  .evnts{
    padding-right: 30px;
    width: 100%;
@@ -330,4 +344,15 @@ cursor: pointer;
 
 .social-media-icon{
 width: 20px;
+}
+
+.footer-links-dec{
+  text-decoration: underline !important;
+  color: grey !important;
+}
+
+.footer-links-dec :hover{
+  text-decoration: underline !important;
+  color: grey !important;
+
 }
